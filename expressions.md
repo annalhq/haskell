@@ -25,4 +25,24 @@ Only syntactic differences between symbolic and alphanumeric function names.
 
 **Symbolic identifiers (Operators)** are **infix** by default, can can be made prefix by enclosing them in parentheses.
 
+Alphanumeric identifiers are **prefix** by default, and can be made infix by enclosing them in backquotes.
 
+For example 
+```Haskell
+max 12 20
+20
+
+-- is equivalent to
+
+12 `max` 20
+20
+```
+
+parentheses are used for grouping
+
+```Haskell
+min 7 (2 + 6)
+7
+
+min 7 (2+6)
+```
