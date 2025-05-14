@@ -1,5 +1,10 @@
 ## Expressions in context
 
+- Expressions and Values
+- Functions and Operators
+- Numbers, character, Booleans, lists (and strings)
+- Lambda terms
+
 1. Haskell programs are structured into *modules*
 2. Modules contain declarations
 
@@ -75,3 +80,12 @@ Referring tor functions without giving them a name:
 "oll"
 ```
 The `\` is pronounced "lambda"
+
+Particularly useful as an argument to another function
+
+```Haskell
+map (\ x -> 3 * x + 1) [1,2,3]
+[4,7,10]
+```
+Functions taking other functions as arguments are called ***higher-order functions***.
+
